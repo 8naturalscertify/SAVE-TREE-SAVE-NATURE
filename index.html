@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Trees, Save Nature</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f9f4;
+      color: #333;
+    }
+
+    header {
+      background: #2e8b57;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero {
+      background: url('images/bg.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #228B22;
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #1a6f1a;
+    }
+
+    .feature-benefits, .image-gallery, .news, .testimonials {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature-item {
+      max-width: 300px;
+    }
+
+    .feature-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .news-card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .news-img img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .news-content {
+      flex: 1;
+      text-align: left;
+    }
+
+    .read-more a {
+      color: #2e8b57;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .testimonial-item {
+      margin: 20px auto;
+      max-width: 700px;
+      font-style: italic;
+    }
+
+    /* Centered & Enhanced Sections */
+    .facts, .actions, .blog {
+      text-align: center;
+      background-color: #e9f5ec;
+      padding: 60px 20px;
+      font-size: 1.2rem;
+    }
+
+    .fact-list, .action-list {
+      list-style: none;
+      margin-top: 20px;
+      padding-left: 0;
+    }
+
+    .fact-list li, .action-list li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .blog h4 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      color: #2e8b57;
+    }
+
+    .blog p {
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌳 Save Trees, Save Nature 🌱</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Join Us</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#facts">Facts</a></li>
+        <li><a href="#actions">Take Action</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h2><span>Plant Today, Breathe Tomorrow</span></h2>
+    <p><span>Together, we can green the Earth again.</span></p>
+</div>
+
+
+  <!-- Feature Section -->
+  <section class="feature-benefits">
+    <h3>🌿 Why Trees Matter</h3>
+    <div class="features">
+      <div class="feature-item">
+        <img src="images/home1.jpeg" alt="Carbon Absorption" />
+        <p><strong>Carbon Absorption:</strong> Trees absorb up to 48 pounds of CO2 each year.</p>
+      </div>
+      <div class="feature-item">
+        <img src="images/home2.jpeg" alt="Air Purification" />
+        <p><strong>Air Purification:</strong> They filter the air, providing oxygen and cleaning pollutants.</p>
+      </div>
+      <div class="feature-item">
+        <img src="images/home3.jpeg" alt="Soil Protection" />
+        <p><strong>Soil Protection:</strong> Roots prevent soil erosion and help retain water.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="image-gallery">
+    <h3>📸 Stunning Nature Shots</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images/nature1.jpeg" alt="Forest Image 1" /></div>
+      <div class="gallery-item"><img src="images/nature2.jpeg" alt="Forest Image 2" /></div>
+      <div class="gallery-item"><img src="images/nature3.jpeg" alt="Forest Image 3" /></div>
+      <div class="gallery-item"><img src="images/nature3.jpg" alt="Forest Image 4" /></div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news">
+    <h3 class="section-heading">🔥 Hot Topic: Hyderabad Forest Under Threat!</h3>
+    <div class="news-card">
+      <div class="news-img">
+        <img src="images/hydera.jpg" alt="Hyderabad Forest Cutting News" />
+      </div>
+      <div class="news-content">
+        <p>The Hyderabad Urban Forestry region is facing a massive ecological crisis due to proposed deforestation plans aimed at infrastructure expansion. Over <strong>15,000 trees</strong> are set to be cut down.</p>
+        <p>Environmentalists and citizens are raising concerns over the irreversible damage this could cause. Let’s raise our voice together!</p>
+        <p class="read-more"><a href="https://www.theenvironmentalblog.org/2025/04/hyderabad-forest-news/">📖 Read More: Why Protecting Forests is Crucial</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h3>🌿 What People Say</h3>
+    <div class="testimonial-item">
+      <p>"The trees have provided shelter and beauty in our community. It’s time to give back and protect them." – <strong>K.kishor, Environmentalist</strong></p>
+    </div>
+    <div class="testimonial-item">
+      <p>"I planted my first tree as part of this initiative. It feels good knowing I’m contributing to a healthier planet." – <strong>V.l termuli, Volunteer</strong></p>
+    </div>
+  </section>
+
+  <!-- Environmental Facts -->
+  <section id="facts" class="facts">
+    <h3 class="section-heading">🌎 Shocking Environmental Facts</h3>
+    <ul class="fact-list">
+      <li>🌳 1 tree absorbs about 48 pounds of CO₂ every year.</li>
+      <li>🚨 We lose 10 million hectares of forests annually.</li>
+      <li>🌡 Trees help in reducing urban heat island effects.</li>
+    </ul>
+  </section>
+
+  <!-- Take Action -->
+  <section id="actions" class="actions">
+    <h3 class="section-heading">🌱 What Can You Do?</h3>
+    <p>Small steps make big differences. Here's what you can start doing today:</p>
+    <ul class="action-list">
+      <li>🌿 Plant a tree on every birthday or special occasion.</li>
+      <li>🪴 Support local nurseries and green NGOs.</li>
+      <li>♻️ Reduce paper waste and recycle whenever possible.</li>
+      <li>📚 Educate others about the importance of trees and biodiversity.</li>
+    </ul>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <h3 class="section-heading">🌳 Why Planting Trees Matters</h3>
+    <p>Trees are not just greenery; they’re life-givers. Learn more about their role in regulating climate, providing oxygen, and supporting biodiversity.</p>
+    <h4>Conclusion</h4>
+    <p>If we all take responsibility, even one sapling at a time, we can reverse the damage. A greener world is a cleaner, healthier one.</p>
+  </section>
+
+<!-- Small Header Video -->
+<!-- Embedded YouTube Video (Small Size) -->
+<div style="text-align: center; padding-top: 15px;">
+    <iframe width="360" height="202" 
+            src="https://www.youtube.com/embed/WRAFZR7RxUM" 
+            title="Awareness Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen 
+            style="border-radius: 10px;">
+    </iframe>
+    <p style="margin-top: 5px; font-weight: 500;">🌍 Watch Our Environmental Awareness Video</p>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Save Trees Initiative. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

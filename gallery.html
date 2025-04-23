@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Save Trees</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" />
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header>
+    <h1>🌿 Our Green Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <main>
+    <section class="gallery">
+      <h2>Nature in Its Purest Form</h2>
+      <div class="gallery-grid">
+        <!-- Tree Images with Lightbox -->
+        <a href="img1.webp" data-lightbox="gallery" data-title="A Beautiful Oak Tree - Vital for Biodiversity">
+          <img src="images/1.jpeg" alt="Tree 1" class="animated-img">
+        </a>
+        <a href="images/tree2.jpg" data-lightbox="gallery" data-title="The Majestic Redwoods - Guardians of Our Ecosystem">
+          <img src="images/2.jpeg" alt="Tree 2" class="animated-img">
+        </a>
+        <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+          <img src="images/3.jpeg" alt="Tree 3" class="animated-img">
+        </a>
+        <a href="images/tree4.jpg" data-lightbox="gallery" data-title="Urban Green Spaces - The Key to Sustainable Cities">
+          <img src="images/4.jpeg" alt="Tree 4" class="animated-img">
+        </a>
+        <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/5.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/6.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/7.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/8.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/9.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/10.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/11.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/12.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/13.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/14.jpeg" alt="Tree 3" class="animated-img">
+          </a>
+          <a href="images/tree3.jpg" data-lightbox="gallery" data-title="Reforestation Project - Bringing Life Back to the Forests">
+            <img src="images/15.webp" alt="Tree 3" class="animated-img">
+          </a>
+   
+        <!-- Repeat above for all 20 images -->
+      </div>
+    </section>
+
+    <!-- Contribute Your Own Image Section -->
+    <section class="contribute">
+      <h2>Contribute Your Green Pictures</h2>
+      <p>If you have a beautiful tree or plant that you believe should be shared, please contribute your picture here and be part of the movement!</p>
+      <form id="contributeForm" action="submit_image.php" method="POST" enctype="multipart/form-data">
+        <label for="image">Select Image to Upload:</label>
+        <input type="file" name="image" id="image" required>
+        <button type="submit">Submit Your Image</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Save Trees Initiative. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script to handle form submission and preview -->
+  <script>
+    // Form validation and submission handling can go here
+  </script>
+</body>
+</html>
